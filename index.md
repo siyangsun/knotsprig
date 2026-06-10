@@ -4,15 +4,15 @@ title: knotsprig
 permalink: /
 ---
 
-a copse of gnarled
+  a copse of gnarled
       branches where hand
-fuls of things
-   are lashed, for-
-ever connected,   worn
+fuls of things   are lashed, for-
+  ever connected,   worn
                               by time
-and space     and water
+   and space     and water
          like an old tree, that
-has found          its way
+  has found          its way
+
           ashore
 
 ## places
