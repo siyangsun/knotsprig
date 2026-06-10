@@ -7,8 +7,7 @@ permalink: /
 hi. this is my page.
 
 ## places
-- [about]({{ site.baseurl }}/about/)
-- [projects]({{ site.baseurl }}/projects/)
+- [ive-made-it-this-far]({{ site.baseurl }}/ive-made-it-this-far/)
 
 ## elsewhere
 - [github](https://github.com/siyangsun)
