@@ -11,9 +11,7 @@ fuls of things   are lashed, for-
                               by time
    and space     and water
          like an old tree, that
-  has found
-
-          its way
+  has found          its way
           ashore
 
 ## places
