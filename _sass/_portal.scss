@@ -1,0 +1,224 @@
+/**
+ * portal styles
+ */
+
+body {
+  background-color: #f7f3ea;
+}
+
+// site header — shrink to almost nothing
+.site-header {
+  border-top: none;
+  border-bottom: none;
+  min-height: 0;
+  padding: 18px 0 0;
+
+  .site-title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    font-weight: normal;
+    line-height: 1;
+    float: none;
+
+    &,
+    &:visited {
+      color: #aaa;
+    }
+
+    &:hover {
+      color: #c0392b;
+      text-decoration: none;
+    }
+  }
+
+  .site-nav {
+    display: none;
+  }
+}
+
+// footer — strip it down
+.site-footer {
+  border-top: 1px solid #e5ddd0;
+  padding: 20px 0;
+
+  .footer-heading {
+    display: none;
+  }
+
+  .footer-col-wrapper {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #bbb;
+  }
+
+  .footer-col {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .footer-col-2,
+  .footer-col-3 {
+    display: none;
+  }
+
+  .contact-list {
+    li {
+      display: inline;
+      margin-right: 16px;
+    }
+
+    a {
+      color: #bbb;
+
+      &:hover {
+        color: #c0392b;
+      }
+
+      &:visited {
+        color: #bbb;
+      }
+    }
+  }
+}
+
+// portal wrapper — NOT perfectly centered
+.portal {
+  max-width: 560px;
+  margin: 48px auto 80px 13%;
+  padding: 0 20px;
+
+  @include media-query($on-laptop) {
+    margin: 36px auto;
+    padding: 0 16px;
+  }
+}
+
+// page title
+.portal-title {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 46px;
+  font-weight: normal;
+  letter-spacing: -3px;
+  line-height: 1;
+  color: #111;
+  font-style: italic;
+  display: inline-block;
+  border-bottom: 3px solid #c0392b;
+  padding-bottom: 6px;
+  margin-bottom: 28px;
+}
+
+.portal-content {
+  p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    color: #777;
+    line-height: 1.65;
+    margin-bottom: 6px;
+  }
+
+  // section label — label-tape look
+  h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 9px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #f7f3ea;
+    background: #1a1a1a;
+    display: inline-block;
+    padding: 3px 10px 2px;
+    margin-top: 36px;
+    margin-bottom: 10px;
+
+    &::after {
+      content: " >";
+      color: #666;
+    }
+  }
+
+  h3 {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    color: #666;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    text-decoration: underline dotted;
+  }
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  // odd sections — left-bar serif style
+  ul:nth-of-type(odd) li {
+    margin-bottom: 3px;
+
+    a {
+      display: block;
+      padding: 11px 14px;
+      border-left: 4px solid #333;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 16px;
+      color: #111;
+      background: #fbf8f2;
+
+      &::after {
+        content: " \2192";
+        font-size: 12px;
+        color: #ccc;
+        float: right;
+        margin-top: 2px;
+      }
+
+      &:hover {
+        border-left-color: #c0392b;
+        color: #c0392b;
+        text-decoration: none;
+        background: #fff;
+
+        &::after {
+          color: #c0392b;
+        }
+      }
+
+      &:visited {
+        color: #666;
+        border-left-color: #ccc;
+      }
+    }
+  }
+
+  // even sections — outlined monospace box
+  ul:nth-of-type(even) li {
+    margin-bottom: 7px;
+
+    a {
+      display: block;
+      padding: 9px 14px;
+      border: 2px solid #1a1a1a;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 13px;
+      color: #1a1a1a;
+      background: transparent;
+
+      &:hover {
+        background: #1a1a1a;
+        color: #f7f3ea;
+        text-decoration: none;
+      }
+
+      &:visited {
+        color: #666;
+        border-color: #888;
+      }
+    }
+  }
+}
