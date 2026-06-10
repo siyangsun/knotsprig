@@ -6,12 +6,12 @@ body {
   background-color: #f7f3ea;
 }
 
-// site header — shrink to almost nothing
+// site header — empty, collapse it
 .site-header {
   border-top: none;
   border-bottom: none;
   min-height: 0;
-  padding: 18px 0 0;
+  padding: 0;
 
   .site-title {
     font-family: 'Courier New', Courier, monospace;

@@ -4,7 +4,7 @@ title: knotsprig
 permalink: /
 ---
 
-hi. this is my page.
+a root of gnarled branches where handfuls of once connected things are etched in time and space, like a tree of links that has washed up ashore.
 
 ## places
 - [ive-made-it-this-far]({{ site.baseurl }}/ive-made-it-this-far/)
